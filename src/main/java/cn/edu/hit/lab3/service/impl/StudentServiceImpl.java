@@ -17,4 +17,8 @@ public class StudentServiceImpl implements StudentService {
     public List<Student> findAll() {
         return studentMapper.findAll();
     }
+    @Override
+    public void delete(String sid) {
+        studentMapper.delete(sid);
+    }
 }
